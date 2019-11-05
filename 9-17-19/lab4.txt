@@ -1,0 +1,115 @@
+Problem 1: 
+
+Table:
+ABC Y
+000 0
+001 0
+010 1 
+011 1
+100 0
+101 0
+110 1
+111 0
+
+Minterms: 
+!AB!C
+!ABC
+AB!C
+
+Karnaugh Map:
+Y
+\AB
+C  00 01 11 10
+  ------------
+0|  0  1  1  0
+
+1|  0  1  0  0
+
+!AB!C + !ABC +AB!C
+!A(B!C+BC) + AB!C
+!A(B(1))+AB!C
+!AB+AB!C
+B(!A+A!C)
+
+B!C + !AB
+B(!C+!A)
+
+Problem 2:
+Table:
+ABC Y
+000 0
+001 0
+010 1
+011 1
+100 0
+101 0
+110 1
+111 1
+
+Minterms:
+!AB!C
+!ABC
+AB!C
+ABC
+
+Karnaugh Map:
+Y
+\AB
+C  00 01 11 10
+  ------------
+0|  0  1  1  0
+ |
+1|  0  1  1  0
+
+
+!AB!C+!ABC+AB!C+ABC
+B(!A!C+!AC+A!C+AC)
+B(!A(!C+C)+A(!C+C))
+B(!A(1)+A(1))
+B(1)
+B
+
+Problem 3:
+
+Table:
+ACRS B
+0000 0
+0010 0
+0100 0
+0101 1
+0110 1
+0111 1?
+1000 1
+1001 1
+1010 1
+1100 1 
+1101 1
+1110 1
+1111 1
+
+Maxterms:
+!A!C!R!S
+!A!CR!S
+!AC!R!S
+
+Karnaugh Map:
+Y
+\AC
+RS  00 01 11 10
+  ------------
+00|  0  0  1  1
+
+01|  1  1  1  1
+
+11|  1  1  1  1
+
+10|  0  1  1  1
+
+
+!A!C!R!S + !A!CR!S + !AC!R!S
+!A!S(!C!R+!CR+C!R)
+!A!S(!C(!R+R)+C!R)
+AS(C+!CR)
+
+
+A+!AS

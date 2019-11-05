@@ -1,0 +1,16 @@
+lab1.s
+output: 2d = 32+13 = 45
+check: https://www.wolframalpha.com/input/?i=sum+of+0+to+9
+
+
+lab2.s
+output: d2 = 16*13+2 = 208+2 = 210
+check: https://www.wolframalpha.com/input/?i=sum+of+0+to+20 
+
+lab3.s
+output: 6e = 96+14 = 110
+check: https://www.wolframalpha.com/input/?i=sum+%5B0%2C2%2C4%2C6%2C8%2C10%2C12%2C14%2C16%2C18%2C20%5D
+
+lab4.s
+output: 11*(16^2)+3*16+6 = 2870
+check: https://www.wolframalpha.com/input/?i=sum+of+squares+0+to+20

@@ -1,0 +1,17 @@
+1.
+It outputs 12 (0c)
+
+2.
+ldi r0, 3               00 0011 11 0F
+ldi r1, -4              01 1100 11 73
+multiply r3, r0, r1     11 0001 10 C6
+Answer: f4 (-16+4 = -12)
+
+
+3.
+ldi r0, 2               00 0010 11 0B
+add r2, r0, r0          10 0000 00 80
+multiply r2, r2, r2     10 1010 10 AA
+ldi r1, -1              01 1111 11 7F
+add r3, r2, r1          11 1001 00 E4
+Answer: f (15)
